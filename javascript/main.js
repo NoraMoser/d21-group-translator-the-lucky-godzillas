@@ -5,7 +5,7 @@ translateBtn.addEventListener("click", () => {
   let whichLanguage;
   
   let radios = document.getElementsByClassName("whichLanguage");
-  let textInputHTML = document.getElementById("textInput").innerHTML;
+  let textInputHTML = document.getElementById("textInput").value;
   let textArray = textInputHTML.toUpperCase().split(" ");
  for (let i = 0; i < radios.length; i++) {
     // 1 = French, 2 = Icelandic, 3 = Jamaican, 0 = Hawaiian
