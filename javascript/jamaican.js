@@ -1,4 +1,4 @@
-var ToLanguage = (function(newLanguage){
+var ToLanguage = (function(toJamaican){
   let jamaican = {
     "HAPPY": "Happy",
     "HOLIDAYS": "holidays",
@@ -10,12 +10,13 @@ var ToLanguage = (function(newLanguage){
     "TEAM": "team"
   }
 
-  newLanguage.toJamaican = function(){
-    let textArray = textInputHTML.split(' ');
+  toJamaican.translate = function(textArray){
+   console.log(textArray);
+   
   }
 
   return{
-    newLanguage
+    toJamaican
   }
 
 })(ToLanguage);
