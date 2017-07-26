@@ -8,32 +8,32 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <h1>The Lucky Godzillas</h1>
+  <h1>The Lucky Godzillas halo</h1>
 
 
-  <textarea rows="4" cols="50" value="Happy Holidays from our team to yours!">
-  Happy Holidays from our team to yours!
-  </textarea>
+  <textarea id="textInput" rows="4" cols="50" value="Happy Holidays from our team to your team">Happy Holidays from our team to your team</textarea>
 
 
   <form id="form">
   
-  <input type="radio" name="language" value="French"> French<br>
-  <input type="radio" name="language" value="Icelandic"> Icelandic<br>
-  <input type="radio" name="language" value="Jamaican"> Jamaican<br>
-  <input type="radio" name="language" value="Hawaiian"> Hawaiian <br>
-    
+  <input type="radio" name="langRadio" class="whichLanguage" value="1" checked> French<br>
+  <input type="radio" name="langRadio" class="whichLanguage" value="2"> Icelandic<br>
+  <input type="radio" name="langRadio" class="whichLanguage" value="3"> Jamaican<br>
+  <input type="radio" name="langRadio" class="whichLanguage" value="0"> Hawaiian <br>
+  
+  <input type="button" id="button" value="Translate">
   </form>
 
-  <button id="button">Translate</button>
-
-  <div id="output"></div>
+  <div id="output-div">
+    <h3 id=output></h3>
+  </div>
 
 
   
   
   <!-- PLACE SCRIPTS ABOVE MAIN SCRIPT (not sure if it matters)-->
-
-    <script type="text/javascript" src="javascripts/main.js"></script>
+    <script type="text/javascript" src="javascript/jamaican.js"></script>  
+    <script type="text/javascript" src="javascript/translator.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
 </body>
 </html>
