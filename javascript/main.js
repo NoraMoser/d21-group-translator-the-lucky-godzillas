@@ -1,11 +1,11 @@
 let translate = document.getElementById("button");
-let textInputHTML = document.getElementById("textInput").value;
-let textInputUpper = textInputHTML.toUpperCase();
 
 
 
 translate.addEventListener("click", () => {
   let whichLanguage;
+  let textInputHTML = document.getElementById("textInput").value;
+  let textArray = textInputHTML.toUpperCase().split(" ");
 
   let radios = document.getElementsByClassName("whichLanguage");
  for (let i = 0; i < radios.length; i++) {
@@ -16,15 +16,16 @@ translate.addEventListener("click", () => {
       break;
     }
   }
-
     if(whichLanguage == 0){
      // ToLanguage.toHawaiian();
     } else if (whichLanguage == 1) {
-     // ToLanguage.toFrench();
+     // ToLanguage.toFrench.function(textArray);
     } else if (whichLanguage == 2) {
       // ToLanguage.toIcelandic();
     } else {
-      ToLanguage.toJamaican(textInputUpper);
+      ToLanguage.toJamaican.translate(textArray);
     }
     
+  let output = document.getElementById("output").innerHTML;
+
 });
