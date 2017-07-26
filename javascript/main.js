@@ -1,6 +1,9 @@
-console.log('WHAT UP THO, main.js works');
-
 let translate = document.getElementById("button");
+let textInputHTML = document.getElementById("textInput").value;
+let textInputUpper = textInputHTML.toUpperCase();
+
+
+
 translate.addEventListener("click", () => {
   let whichLanguage;
 
@@ -10,21 +13,18 @@ translate.addEventListener("click", () => {
   
     if (radios[i].checked){
       whichLanguage = radios[i].value;
-      console.log(whichLanguage);
-      
       break;
     }
-    
   }
+
     if(whichLanguage == 0){
-      console.log('this will be in Hawaiian');
+     // ToLanguage.toHawaiian();
     } else if (whichLanguage == 1) {
-      console.log('this will be French');
+     // ToLanguage.toFrench();
     } else if (whichLanguage == 2) {
-      console.log('this will be Icelandic');
+      // ToLanguage.toIcelandic();
     } else {
-      console.log('this will be Jamaican');
+      ToLanguage.toJamaican(textInputUpper);
     }
-
-
+    
 });
