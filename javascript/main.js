@@ -25,6 +25,6 @@ translateBtn.addEventListener("click", () => {
       ToLanguage.toJamaican(textArray);
     }
     
-  let output = document.getElementById("output").innerHTML;
+  let output = document.getElementById("output");
 
 });
