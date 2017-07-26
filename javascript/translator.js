@@ -10,11 +10,5 @@ var ToLanguage = (function(){
     "TEAM": "team"
   }
 
-
-
-  
-  return{
-    english
-  }
-
+  return {}
 })();
