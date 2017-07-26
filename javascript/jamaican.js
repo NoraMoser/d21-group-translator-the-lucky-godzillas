@@ -1,4 +1,4 @@
-var ToLanguage = (function(toJamaican){
+var ToLanguage = (function(translator){
   let jamaican = {
     "HAPPY": "Happy",
     "HOLIDAYS": "holidays",
@@ -10,13 +10,14 @@ var ToLanguage = (function(toJamaican){
     "TEAM": "team"
   }
 
-  toJamaican.translate = function(textArray){
-   console.log(textArray);
+  translator.toJamaican = function(textArray){
+    console.log(textArray);
+    
+
+    
    
   }
 
-  return{
-    toJamaican
-  }
+  return translator
 
 })(ToLanguage);
