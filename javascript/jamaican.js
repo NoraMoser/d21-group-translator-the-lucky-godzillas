@@ -1,4 +1,4 @@
-var ToLanguage = (function(toJamaican){
+var ToLanguage = (function(translator){
   let jamaican = {
     "HAPPY": "Happy",
     "HOLIDAYS": "holidays",
@@ -9,14 +9,16 @@ var ToLanguage = (function(toJamaican){
     "YOUR": "fi yuh",
     "TEAM": "team"
   }
+  
+  var tranlatedArray = [];
+  translator.toJamaican = function(textArray){
 
-  toJamaican.translate = function(textArray){
-   console.log(textArray);
-   
+    textArray.forEach(function(i) {
+      tranlatedArray += ` ${jamaican[i]}`; 
+    });
+    output.innerHTML = tranlatedArray;
   }
 
-  return{
-    toJamaican
-  }
+  return translator
 
 })(ToLanguage);

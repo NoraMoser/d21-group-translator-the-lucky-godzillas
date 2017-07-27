@@ -1,26 +1,26 @@
-var ToLanguage = (function(ToIcelandic){
 
-// }
-
-function ToIcelandic (){
-
-	let EngtoIcelandic = {
-		happy: "hamingjusöm", 
-		holidays: "frídagar", 
-		from: "frá", 
-		our: "okkar", 
-		team: "lið", 
-		to: "til", 
-		yours: "Þitt"
-	};
-
-	// for (i = 0; i <= EngtoIcelandic.length; i++){
-	// 	console.log(EngtoIcelandic[i]);
-	// }
-// 	let EngtoIcelandic = EngtoIcelandic[i];
-
-	return ToIcelandic;
+// console.log("hi");
+var ToLanguage = (function(translator){
+    // console.log(ToLanguage);
+  
+let icelandic = {
+    "HAPPY": "hamingjusöm",
+    "HOLIDAYS": "frídagar",
+    "FROM": "frá",
+    "OUR": "okkar",
+    "TEAM": "lið",
+    "TO": "til",
+    "YOUR": "Þitt",
+    "TEAM": "lið"
 }
+  //console.log(icelandic);
+  
+  translator.toIcelandic = function(textArray){
+   console.log(textArray);
+   
+  }
+  return translator
 })(ToLanguage);
-// EngtoIcelandic[i] = toIcelandic();
-// console.log(EngtoIcelandic[i]);
+
+// toIcelandic.translate
+>>>>>>> master
