@@ -12,8 +12,6 @@ var ToLanguage = (function(translator){
 
   var tranlatedArray = [];
   translator.toFrench= function(textArray){
-
-
     textArray.forEach(function(i) {
       tranlatedArray += ` ${french[i]}`;
     });
