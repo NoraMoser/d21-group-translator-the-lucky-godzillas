@@ -13,6 +13,7 @@ var ToLanguage = (function(translator){
   var tranlatedArray = [];
   translator.toJamaican = function(textArray){
 
+
     textArray.forEach(function(i) {
       tranlatedArray += ` ${jamaican[i]}`; 
     });
