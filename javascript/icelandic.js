@@ -14,13 +14,18 @@ let icelandic = {
     "TEAM": "lið"
 }
   //console.log(icelandic);
-  
+   var tranlatedArray = [];
   translator.toIcelandic = function(textArray){
-   console.log(textArray);
-   
+
+    textArray.forEach(function(i) {
+      tranlatedArray += ` ${icelandic[i]}`; 
+    });
+    output.innerHTML = tranlatedArray;
   }
+   // console.log(textArray);
+   
   return translator
 })(ToLanguage);
 
-// toIcelandic.translate
->>>>>>> master
+
+
