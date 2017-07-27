@@ -9,13 +9,14 @@ var ToLanguage = (function(translator){
     "YOUR": "fi yuh",
     "TEAM": "team"
   }
-
+  
+  var tranlatedArray = [];
   translator.toJamaican = function(textArray){
-    console.log(textArray);
-    
 
-    
-   
+    textArray.forEach(function(i) {
+      tranlatedArray += ` ${jamaican[i]}`; 
+    });
+    output.innerHTML = tranlatedArray;
   }
 
   return translator
