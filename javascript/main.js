@@ -15,12 +15,14 @@ translateBtn.addEventListener("click", () => {
       break;
     }
   }
+
     if(whichLanguage == 0){
       ToLanguage.toHawaiian(textArray);
     } else if (whichLanguage == 1) {
       ToLanguage.toFrench(textArray);
     } else if (whichLanguage == 2) {
       ToLanguage.toIcelandic(textArray);
+
     } else {
       ToLanguage.toJamaican(textArray);
     }
